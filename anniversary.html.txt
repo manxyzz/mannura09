@@ -1,0 +1,99 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Anniversary Animasi + Musik</title>
+  <style>
+    body {
+      background: #fcefee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #a83260;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(168, 50, 96, 0.2);
+      padding: 30px;
+      max-width: 400px;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    h1 {
+      margin-bottom: 15px;
+      font-size: 2rem;
+      animation: slideDown 1s forwards;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      animation: fadeInText 2s forwards;
+    }
+    .emoji {
+      font-size: 3rem;
+      animation: pulse 2s infinite;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes slideDown {
+      from {
+        transform: translateY(-50px);
+opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>happy anniversary, sayang!</h1>
+    <p>
+      hari ini tepat dua bulan kita bareng, sayang.<br />
+      dua bulan mungkin belum lama, tapi cukup buat bikin aku yakin kamu itu istimewa.<br />
+      makasih udah jadi sosok yang sabar, manis, dan selalu bikin nyaman.<br />
+      semoga ke depannya hubungan ini makin kuat, makin dewasa, dan tetap saling sayang sampai kapan pun.<br />
+      <span class="emoji">💍🤍🫶</span>
+    </p>
+    <p><strong>i love you</strong></p>
+  </div>
+
+
+  <!-- Musik latar otomatis -->
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg" />
+    Browser kamu gak support audio.
+  </audio>
+</body>
+</html>
+```
